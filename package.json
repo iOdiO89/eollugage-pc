@@ -9,7 +9,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@tanstack/react-query": "^5.51.11",
     "@tanstack/react-query-devtools": "^5.51.11",
-    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
@@ -18,10 +18,12 @@
     "@types/react-dom": "^18.3.0",
     "dayjs": "^1.11.12",
     "electron-is-dev": "^3.0.1",
+    "eslint-config-react-app": "^7.0.1",
     "jotai": "^2.9.0",
     "jotai-devtools": "^0.10.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router": "^6.26.1",
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "styled-components": "^6.1.12",
@@ -33,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "concurrently \"cross-env NODE_ENV=development BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "dev": "concurrently \"cross-env NODE_ENV=development BROWSER=none yarn start\" \"wait-on http://localhost:3000 && NODE_OPTIONS='--require $PWD/.pnp.cjs' electron .\"",
     "electron-build": "yarn build && electron-builder",
     "electron-build:win": "yarn build && electron-builder --win --x64"
   },
@@ -56,11 +58,17 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.25.2",
     "@tanstack/eslint-plugin-query": "^5.51.12",
+    "@testing-library/dom": "^10.4.0",
+    "@types/babel__core": "^7",
+    "@types/eslint": "^8",
+    "@types/mocha": "^10.0.7",
     "concurrently": "^8.2.2",
     "cross-env": "^7.0.3",
     "electron": "^31.2.1",
     "electron-builder": "^24.13.3",
+    "eslint": "^8.57.0",
     "wait-on": "^7.2.0"
   }
 }
