@@ -6505,13 +6505,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-is-dev@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "electron-is-dev@npm:3.0.1"
-  checksum: 10c0/80d37d61d44b8b7af0af90eab622b09e0f165afbc2560297c760356efa93fcb54dbbd13d4d6522da6474e261d630b76b804c86385564a1f3062d28fc59c340bd
-  languageName: node
-  linkType: hard
-
 "electron-publish@npm:24.13.1":
   version: 24.13.1
   resolution: "electron-publish@npm:24.13.1"
@@ -6656,7 +6649,6 @@ __metadata:
     dayjs: "npm:^1.11.12"
     electron: "npm:^31.2.1"
     electron-builder: "npm:^24.13.3"
-    electron-is-dev: "npm:^3.0.1"
     eslint: "npm:^8.57.0"
     eslint-config-react-app: "npm:^7.0.1"
     jotai: "npm:^2.9.0"
@@ -6670,6 +6662,9 @@ __metadata:
     typescript: "npm:^4.9.5"
     wait-on: "npm:^7.2.0"
     web-vitals: "npm:^2.1.4"
+  dependenciesMeta:
+    electron-is-dev@3.0.1:
+      unplugged: true
   languageName: unknown
   linkType: soft
 

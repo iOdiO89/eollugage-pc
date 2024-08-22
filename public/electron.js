@@ -1,7 +1,7 @@
 const { app, BrowserWindow } = await import('electron')
 const path = await import('path')
 const { fileURLToPath } = await import('url')
-const isDev = await import('electron-is-dev')
+// const isDev = await import('electron-is-dev')
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -17,14 +17,16 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true,
-      devTools: isDev,
+      // devTools: isDev,
       preload: path.join(__dirname, 'proload.js'),
     },
   })
 
-  mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`)
+  mainWindow.loadURL('http://localhost:3000')
+  // mainWindow.loadURL(isDev ? 'http://localhost:3000' : `file://${path.join(__dirname, '../build/index.html')}`)
 
-  if (isDev) mainWindow.webContents.openDevTools({ mode: 'detach' })
+  // if (isDev)
+  mainWindow.webContents.openDevTools({ mode: 'detach' })
 
   mainWindow.on('closed', () => {
     mainWindow = null

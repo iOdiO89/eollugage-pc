@@ -48,7 +48,6 @@ const RAW_RUNTIME_STATE =
           ["dayjs", "npm:1.11.13"],\
           ["electron", "npm:31.4.0"],\
           ["electron-builder", "npm:24.13.3"],\
-          ["electron-is-dev", "npm:3.0.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-react-app", "virtual:238479a31414c25b8a5aaf994717c11ca222ac7c220310c3b24d60594720627a910b85ca5a3905ccd1cdece78614d4db2afa1ecc9d10d62a373e5f0ed428febc#npm:7.0.1"],\
           ["jotai", "virtual:238479a31414c25b8a5aaf994717c11ca222ac7c220310c3b24d60594720627a910b85ca5a3905ccd1cdece78614d4db2afa1ecc9d10d62a373e5f0ed428febc#npm:2.9.3"],\
@@ -9546,15 +9545,6 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
-    ["electron-is-dev", [\
-      ["npm:3.0.1", {\
-        "packageLocation": "../../.yarn/berry/cache/electron-is-dev-npm-3.0.1-2c942b5cb7-10c0.zip/node_modules/electron-is-dev/",\
-        "packageDependencies": [\
-          ["electron-is-dev", "npm:3.0.1"]\
-        ],\
-        "linkType": "HARD"\
-      }]\
-    ]],\
     ["electron-publish", [\
       ["npm:24.13.1", {\
         "packageLocation": "../../.yarn/berry/cache/electron-publish-npm-24.13.1-40acfab2ad-10c0.zip/node_modules/electron-publish/",\
@@ -9705,7 +9695,6 @@ const RAW_RUNTIME_STATE =
           ["dayjs", "npm:1.11.13"],\
           ["electron", "npm:31.4.0"],\
           ["electron-builder", "npm:24.13.3"],\
-          ["electron-is-dev", "npm:3.0.1"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-react-app", "virtual:238479a31414c25b8a5aaf994717c11ca222ac7c220310c3b24d60594720627a910b85ca5a3905ccd1cdece78614d4db2afa1ecc9d10d62a373e5f0ed428febc#npm:7.0.1"],\
           ["jotai", "virtual:238479a31414c25b8a5aaf994717c11ca222ac7c220310c3b24d60594720627a910b85ca5a3905ccd1cdece78614d4db2afa1ecc9d10d62a373e5f0ed428febc#npm:2.9.3"],\
