@@ -23,7 +23,7 @@ export default function Modal({
         <Title>{title}</Title>
         <Description>{description}</Description>
         <ButtonContainer>
-          <GrayButton onClick={onClickGrayButton}>{grayButtonText}</GrayButton>
+          {grayButtonText !== undefined && <GrayButton onClick={onClickGrayButton}>{grayButtonText}</GrayButton>}
           <BlackButton onClick={onClickBlackButton}>{blackButtonText}</BlackButton>
         </ButtonContainer>
       </Panel>
