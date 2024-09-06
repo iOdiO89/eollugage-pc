@@ -17,7 +17,7 @@ function useGetMy(queryClient?: QueryClient) {
   useEffect(() => {
     if (query.isSuccess) {
       setStoreId(query.data.storeList[0].storeId)
-      navigate(ROUTE.WAITING_MAIN)
+      navigate(ROUTE.WAITING_MAIN, { state: 'login' })
     }
     // eslint-disable-next-line
   }, [query.isSuccess])
